@@ -28,10 +28,10 @@ class ДиджейMod(loader.Module):
 				else:
 					count = int(args[0])
 		txt = '<a href="tg://user?id={}">{}</a>'
-		await message.edit(txt.format(id, "ЕБАН БАН БАН БАН БАН ЕБББААННННН БАН БАН БАН БАН БАН"))
+		await message.edit(txt.format(id, "Я ДИДЖЕЙ ЕБАН"))
 		for _ in range(count):
 			await sleep(0.3)
-			msg = await message.client.send_message(message.to_id, txt.format(id, "Диджей ЕБАН БАН БАН БАН!!!!"), reply_to=message)
+			msg = await message.client.send_message(message.to_id, txt.format(id, "ЕБАН БАН БАН БАН БАН ЕБББААННННН БАН БАН БАН БАН БАН!!!!"), reply_to=message)
 			if not msg.is_reply:
 				await msg.edit("<b>Остановлено хуйня!</b>")
 				break
